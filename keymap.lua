@@ -8,7 +8,7 @@ lvim.keys.insert_mode["jj"] = "<Esc>"
 
 -- builtin
 
-lvim.builtin.which_key.mappings.b.c = { "<cmd>Bufferkill<CR>", "close" }
+lvim.builtin.which_key.mappings.b.c = { "<cmd>BufferKill<CR>", "close" }
 
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
@@ -32,6 +32,7 @@ lvim.builtin.which_key.mappings["r"] = {
 lvim.builtin.which_key.mappings["j"] = {
   name = "jump",
   w = { "<cmd>HopWord<cr>", "word" },
+  c = { "<cmd>HopChar1<cr>", "word" },
   b = { "<cmd>Telescope buffers<cr>", "buffer" }
 }
 
