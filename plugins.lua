@@ -15,5 +15,14 @@ lvim.plugins = {
     config = function()
       require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
     end
+  },
+  {
+    "kylechui/nvim-surround",
+    tag = "*",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
   }
 }
