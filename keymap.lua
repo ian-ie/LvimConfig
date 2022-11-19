@@ -31,10 +31,9 @@ lvim.builtin.which_key.mappings["r"] = {
 
 lvim.builtin.which_key.mappings["j"] = {
   name = "jump",
-  w = { "<cmd>HopWord<cr>", "word" },
-  c = { "<cmd>HopChar1<cr>", "char1" },
-  t = { "<cmd>HopChar2<cr>", "char2" },
-  b = { "<cmd>Telescope buffers<cr>", "buffer" }
+  w = { "<Plug>(leap-forward-to)", "forward" },
+  b = { "<Plug>(leap-backward-to)", "backward" },
+  t = { "<cmd>Telescope buffers<cr>", "buffer" }
 }
 
 lvim.builtin.which_key.vmappings["r"] = { "<Plug>SnipRun<cr>", "run" }
