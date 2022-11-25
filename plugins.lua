@@ -37,5 +37,13 @@ lvim.plugins = {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+  {
+    "simrat39/symbols-outline.nvim",
+    config = function()
+      require("symbols-outline").setup({
+
+      })
+    end
   }
 }

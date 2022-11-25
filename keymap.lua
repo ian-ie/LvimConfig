@@ -10,6 +10,7 @@ lvim.keys.insert_mode["jj"] = "<Esc>"
 
 lvim.builtin.which_key.mappings.b.c = { "<cmd>BufferKill<CR>", "close" }
 
+lvim.builtin.which_key.mappings.o = { "<cmd>SymbolsOutline<CR>", "outline" }
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Trouble",
