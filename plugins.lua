@@ -10,8 +10,7 @@ lvim.plugins = {
   {
     "ggandor/leap.nvim",
     config = function()
-      require("leap").setup({
-      })
+
     end
   },
   {
@@ -42,6 +41,8 @@ lvim.plugins = {
     "simrat39/symbols-outline.nvim",
     config = function()
       require("symbols-outline").setup({
+        autofold_depth = 1,
+
         symbols = {
           File = { hl = "@text.uri" },
           Module = { hl = "@namespace" },
