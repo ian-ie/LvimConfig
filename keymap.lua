@@ -3,6 +3,9 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.insert_mode["<C-s>"] = "<Esc>:w<cr>"
 lvim.keys.insert_mode["jj"] = "<Esc>"
 
+vim.keymap.set({ 'n', 'v' }, 'H', '0')
+vim.keymap.set({ 'n', 'v' }, 'L', '$')
+
 -- use
 
 
