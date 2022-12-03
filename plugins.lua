@@ -1,18 +1,19 @@
 lvim.plugins = {
+    -- 错误诊断
     {
         "folke/trouble.nvim",
         cmd = "TroubleToggle",
     },
+    -- 代码片段运行
     {
         "michaelb/sniprun",
         run = "bash ./install.sh"
     },
+    -- 跳转
     {
         "ggandor/leap.nvim",
-        config = function()
-
-        end
     },
+    -- f增强
     {
         "ggandor/flit.nvim",
         config = function()
@@ -28,6 +29,7 @@ lvim.plugins = {
 
         end
     },
+    -- 加("")
     {
         "kylechui/nvim-surround",
         tag = "*",
@@ -37,6 +39,7 @@ lvim.plugins = {
             })
         end
     },
+    -- 符号信息
     {
         "simrat39/symbols-outline.nvim",
         config = function()
@@ -74,6 +77,7 @@ lvim.plugins = {
             })
         end
     },
+    -- 去背景色变透明
     { "xiyaowong/nvim-transparent",
         config = function()
             require("transparent").setup({
@@ -93,11 +97,8 @@ lvim.plugins = {
             })
         end
     },
-    { "olimorris/onedarkpro.nvim",
-        config = function()
-            require("onedarkpro").setup({
-
-            })
-        end
+    -- 翻译
+    {
+        "voldikss/vim-translator",
     }
 }
